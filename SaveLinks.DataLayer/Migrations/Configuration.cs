@@ -24,9 +24,9 @@ namespace SaveLinks.DataLayer.Migrations
             //
             context.Persons.AddOrUpdate(
               p => p.Id,
-              new Person { LastName = "Ursu", FirstName = "Robert", Age = 21 },
-              new Person { LastName = "Toma", FirstName = "Beatrice", Age = 22 },
-              new Person { LastName = "Naidin", FirstName = "Vlad", Age = 23}
+              new Person { LastName = "Ursu", FirstName = "Robert", Age = 21, CreatedOn = DateTime.Now, UpdatedOn = DateTime.Now},
+              new Person { LastName = "Toma", FirstName = "Beatrice", Age = 22, CreatedOn = DateTime.Now, UpdatedOn = DateTime.Now },
+              new Person { LastName = "Naidin", FirstName = "Vlad", Age = 23, CreatedOn = DateTime.Now, UpdatedOn = DateTime.Now }
             );
             //
         }
